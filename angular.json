@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "artist-application"
+    }
+  },
+  "defaultProject": "artist-application",
+  "cli": {
+    "analytics": "a6f96579-40a1-4bf0-9cf2-c579012eeb7a"
+  }
 }
