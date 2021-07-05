@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ArtistInformationService } from '../../services/bandsintown-api/api/artistInformation.service';
+import { ArtistInfoComponent } from '../artist-info/artist-info.component';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ import { ArtistInformationService } from '../../services/bandsintown-api/api/art
 export class HomeComponent implements OnInit {
 
   data: any;
+
+  artistinfo: ArtistInfoComponent;
 
   constructor(private ArtistInformationService: ArtistInformationService) { }
 

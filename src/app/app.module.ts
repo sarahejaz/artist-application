@@ -8,13 +8,15 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ArtistInformationService } from './services/bandsintown-api';
 import { HeaderComponent } from './components/header/header.component';
+import { ArtistInfoComponent } from './components/artist-info/artist-info.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    ArtistInfoComponent
   ],
   imports: [
     BrowserModule,

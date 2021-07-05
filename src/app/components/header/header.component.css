@@ -4,3 +4,31 @@
     background-size: cover;
     background-position: center;
 }
+
+.main-header {
+    text-align: center;
+    background-color: #3636367c;
+}
+
+.header-white-div {
+    margin: 0;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 85px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.header-tagline {
+    text-align: center;
+    font-size: 26px;
+    color: white;
+}
