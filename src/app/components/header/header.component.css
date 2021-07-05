@@ -1,0 +1,6 @@
+.header-img {
+    background-image: url('../../../assets/home/artist-image-w-overlay.png');
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}

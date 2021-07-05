@@ -1,22 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
-/* #242F40 */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/* #242F40 
+
+{"Dark Jungle Green":"011A1F","Palatinate Purple":"673269","Queen Blue":"4F6E94","Mulberry Crayola":"C74C95","Lavender Gray":"C6CAD4"}
+
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 html {
-    background-color: white;
+    background-color: #C6CAD4;
     color: #363636;
-    font-family: "Nanum Gothic";
+    font-family: "Maven Pro";
+}
+
+.main-header {
+    text-align: center;
+    background-color: #3636367c;
+}
+
+.header-white-div {
+    margin: 0;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 85px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.header-tagline {
+    text-align: center;
+    font-size: 26px;
+    color: white;
 }
 
 .white-div {
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right: auto;
     margin-left: auto;
-    width: 900px;
+    width: 1000px;
     border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
     background-color: white;
     text-align: center;
+    position: relative;
 }
 
 .name {
@@ -24,5 +59,5 @@ html {
 }
 
 .text {
-    font-size: 20px;
+    font-size: 40px;
 }
