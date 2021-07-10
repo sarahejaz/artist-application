@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Artist } from 'src/app/models/artist';
 
 @Component({
   selector: 'app-artist-info',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistInfoComponent implements OnInit {
 
-  constructor() { }
+  artist: Artist;
+
+  constructor() {
+    this.artist = new Artist;
+    this.artist._id = '1';
+    this.artist.name = "The Strokes";
+    this.artist.facebookurl = "http://www.facebook.com/"
+    this.artist.picture = "image";
+  }
 
   ngOnInit(): void {
   }

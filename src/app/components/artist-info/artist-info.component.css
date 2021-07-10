@@ -1,5 +1,36 @@
 .main-artist-info-div {
-    width: 700px;
-    height: 500px;
-    color: gray;
+    margin-top: 5%;
+    width: 600px;
+    height: 150px;
+    background-color: white;
+}
+
+.artist-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: gray;
+    float: left;
+}
+
+.artist-text {
+    text-align: left;
+    width: 400px;
+    height: 80px;
+    float: left;
+    padding-left: 30px;
+}
+
+.artist-name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.artist-link {
+    font-size: 18px;
+}
+
+.artist-events {
+    float: right;
+    margin-top: -20px;
 }
