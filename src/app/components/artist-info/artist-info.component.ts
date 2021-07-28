@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Artist } from 'src/app/models/artist';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-artist-info',
@@ -7,18 +6,10 @@ import { Artist } from 'src/app/models/artist';
   styleUrls: ['./artist-info.component.css']
 })
 export class ArtistInfoComponent implements OnInit {
+  @Input() name: String;
+  @Input() fburl: String;
 
-  artist: Artist;
+  constructor() {}
 
-  constructor() {
-    this.artist = new Artist;
-    this.artist._id = '1';
-    this.artist.name = "The Strokes";
-    this.artist.facebookurl = "http://www.facebook.com/"
-    this.artist.picture = "image";
-  }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

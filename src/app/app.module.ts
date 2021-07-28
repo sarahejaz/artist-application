@@ -10,22 +10,20 @@ import { ArtistInformationService } from './services/bandsintown-api';
 import { HeaderComponent } from './components/header/header.component';
 import { ArtistInfoComponent } from './components/artist-info/artist-info.component';
 
+import { FormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    ArtistInfoComponent
+    ArtistInfoComponent,
+    SearchFilterPipe
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  providers: [
-    ArtistInformationService],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [ArtistInformationService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

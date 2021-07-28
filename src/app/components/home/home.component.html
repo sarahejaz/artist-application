@@ -3,12 +3,19 @@
         <p class="text">
             Search for an artist:
         </p>
-        <input name="searchInput" type="text" placeholder="Search..." size="60" style="padding: 5px 10px; line-height: 26px;">
+        <form class="wrap">
+            <div class="search">
+                <input name="searchTerm" type="text" placeholder="Search..." size="60" style="padding: 5px 10px; line-height: 26px;"
+            [(ngModel)]="searchTerm" (input)="search($event.target.value)" />
+            </div>
+        </form>
         <br>
+
         <div class="artist-info-list">
-            <app-artist-info></app-artist-info>
-            <app-artist-info></app-artist-info>
-            <app-artist-info></app-artist-info>
+            <div *ngFor="let artist of searchArtists | searchFilter: searchTerm; index as i">
+                <app-artist-info [name]="artist.name" [fburl]="artist.facebookurl"></app-artist-info>
+            </div>
+
         </div>
     </div>
     <br><br><br><br>

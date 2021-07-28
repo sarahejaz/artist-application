@@ -1,6 +1,6 @@
 export class Artist {
-    _id: string;
-    name: string;
-    picture: string;
-    facebookurl: string;
+  id: string = '';
+  name: string = '';
+  picture: string = '';
+  facebookurl: string = 'http://www.facebook.com/';
 }
